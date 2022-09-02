@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+body {
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 6rem 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+main section {
+  max-width: 20.5rem;
+  padding: 3rem;
+}
+
+main section h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #f2f2f2;
+  margin: 1.5rem 0;
+}
+
+main section p {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+main section .btn {
+  display: inline-block;
+  background-color: #f2f2f2;
+  padding: .6rem 1.9rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  border: solid 2.5px white;
+  transition: all .25s ease;
+}
+
+main section .btn:hover, main section .btn:active, main section .btn:focus {
+  background-color: transparent;
+}
+
+main section:nth-child(1) {
+  background-color: #e38826;
+}
+
+main section:nth-child(1) .btn {
+  color: #e38826;
+}
+
+main section:nth-child(1) .btn:hover, main section:nth-child(1) .btn:active, main section:nth-child(1) .btn:focus {
+  color: #f2f2f2;
+}
+
+main section:nth-child(2) {
+  background-color: #006970;
+}
+
+main section:nth-child(2) .btn {
+  color: #006970;
+}
+
+main section:nth-child(2) .btn:hover, main section:nth-child(2) .btn:active, main section:nth-child(2) .btn:focus {
+  color: #f2f2f2;
+}
+
+main section:nth-child(3) {
+  background-color: #004241;
+}
+
+main section:nth-child(3) .btn {
+  color: #004241;
+}
+
+main section:nth-child(3) .btn:hover, main section:nth-child(3) .btn:active, main section:nth-child(3) .btn:focus {
+  color: #f2f2f2;
+}
+
+footer {
+  margin-top: 1rem;
+}
+
+footer a {
+  color: #006970;
+  transition: color .3s ease;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #004241;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    padding: 0;
+  }
+  main {
+    flex-direction: row;
+  }
+  main section {
+    max-width: 19.1rem;
+  }
+  main section p {
+    margin-bottom: 5rem;
+  }
+}

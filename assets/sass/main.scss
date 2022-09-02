@@ -1,0 +1,144 @@
+//VARIABLES
+$bright-orange: #e38826;
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+
+$transparent-white: hsla(0, 0%, 100%, 0.75);
+$very-light-gray: hsl(0, 0%, 95%);
+
+//FONTS
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+//
+body {
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $very-light-gray;
+  padding: 6rem 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  border-radius: .5rem;
+  overflow: hidden;
+
+  section {
+    max-width: 20.5rem;
+    padding: 3rem;
+
+    h1 {
+      font-family: 'Big Shoulders Display', cursive;
+      font-weight: 700;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      color: $very-light-gray;
+      margin: 1.5rem 0;
+    }
+
+    p {
+      display: inline-block;
+      color: $transparent-white;
+      font-weight: 400;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: $very-light-gray;
+      padding: .6rem 1.9rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      border: solid 2.5px white;
+      transition: all .25s ease;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: transparent;
+      }
+    }
+  }
+
+  section:nth-child(1) {
+    background-color: $bright-orange;
+
+    .btn {
+      color: $bright-orange;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $very-light-gray;
+      }
+    }
+  }
+
+  section:nth-child(2) {
+    background-color: $dark-cyan;
+
+    .btn {
+      color: $dark-cyan;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $very-light-gray;
+      }
+    }
+  }
+
+  section:nth-child(3) {
+    background-color: $very-dark-cyan;
+
+    .btn {
+      color: $very-dark-cyan;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $very-light-gray;
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 1rem;
+
+  a {
+    color: $dark-cyan;
+    transition: color .3s ease;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      color: $very-dark-cyan;
+    }
+  }
+}
+
+//MEDIA QUERIES
+@media screen and (min-width:700px) {
+  body {
+    padding: 0;
+  }
+
+  main {
+    flex-direction: row;
+
+    section {
+      max-width: 19.1rem;
+
+      p {
+        margin-bottom: 5rem;
+      }
+    }
+  }
+}
